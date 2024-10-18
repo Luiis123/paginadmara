@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+    <div class="album-container">
+        <h1>Fotos y videos con canciones que me hacen recordar lo bonito que es estar contigo</h1>
+        <div class="gallery">
+            <div class="photo-card" onclick="showDate(this)">
+                <img src="./1.jpeg" alt="Foto 1">
+                <p class="date">Fecha: 07/06/2024</p>
+                <audio class="background-music">
+                    <source src="./canciones/si en tu mente estuve.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="photo-card" onclick="showDate(this)">
+                <img src="2.jpeg" alt="Foto 2">
+                <p class="date">Fecha: 07/06/2024</p>
+                <audio class="background-music">
+                    <source src="./canciones/EME.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="photo-card" onclick="showDate(this)">
+                <img src="6.jpeg" alt="Video 3">
+                <p class="date">Fecha: 09/08/2024</p>
+                <audio class="background-music">
+                    <source src="./canciones/No Te Quiero Perder.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="photo-card" onclick="showDate(this)">
+                <video muted autoplay loop src="4.mp4" alt="Video 4"></video>
+                <p class="date">Fecha: 13/06/2024</p>
+                <audio class="background-music">
+                    <source src="./canciones/dime quien.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="photo-card" onclick="showDate(this)">
+                <video muted autoplay loop src="3.mp4" alt="Foto 5"></video>
+                <p class="date">Fecha: 22/06/2024</p>
+                <audio class="background-music">
+                    <source src="./canciones/continental.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="photo-card" onclick="showDate(this)">
+                <video muted autoplay loop src="55.mp4" alt="Foto 6"></video>
+                <p class="date">Fecha: 20/07/2023</p>
+                <audio class="background-music">
+                    <source src="./canciones/aquel nap.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="album.js"></script>
+
+    <!-- Botón de exclamación en la esquina inferior derecha -->
+    <button class="info-button" onclick="openModal()">❗</button>
+
+    <!-- Modal (cuadro de texto emergente) -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <p>Pagina creada por: JorgeLu <br>Dedicada a: GreciaMara</p>
+        </div>
+    </div>
+
+    <script src="album.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEEEET</title>
+    <style>
+        /* Fondo general */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8A2BE2; /* Color morado */
+            background-image: url('flores-difuminadas.png'); /* Imagen difuminada de flores */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Contenedor del cuadro de texto */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+        }
+
+        /* Botón central */
+        .button-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo del recuadro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-box:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .button-box p {
+            margin: 0;
+            font-size: 18px;
+            color: #4B0082;
+        }
+
+        /* Cuadro de texto que aparece al hacer clic */
+        .message-box {
+            display: none; /* Oculto inicialmente */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .message-box p {
+            font-size: 24px;
+            color: #4B0082; /* Texto en color morado oscuro */
+            margin: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: violet;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid purple;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: purple;
+            color: violet;
+        }
+        /* Imagen en el mensaje */
+        .message-box img {
+            margin-top: 10px;
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        audio {
+            display: none; /* Mantener oculto el reproductor */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botón que activa el mensaje, la música y la imagen -->
+        <div class="button-box" id="play-button" onclick="playAudioAndShowMessage()">
+            <p>Haz clic aquí</p>
+        </div>
+    </div>
+
+    <!-- Cuadro de texto que aparece tras el clic -->
+    <div class="message-box" id="message-box">
+        <p id="mensaje">Me puse a escuchar monet hoy y no pude dejar de pensar en lo mucho q te quiero. <br> Ojala te me mueras a los 90 y tantos y yo dos semanas despues del corazn roto</p>
+        <!-- Imagen que se mostrará al hacer clic -->
+        <img id="imagen" src="WhatsApp Image 2024-09-23 at 12.41.30 PM.jpeg" alt="">
+    </div>
+
+    <!-- Música oculta -->
+    <audio id="background-music">
+        <source src="nsqk - MONET - deslactosada (youtube).mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        function playAudioAndShowMessage() {
+            // Mostrar el cuadro de mensaje y la imagen
+            var messageBox = document.getElementById('message-box');
+            messageBox.style.display = 'block';
+
+            // Reproducir el audio 5 veces
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.1; // Volumen bajo
+            audio.play(); // Comienza la reproducción
+            
+            // Repetir 5 veces la canción (con el atributo loop)
+            var loopCount = 0;
+            audio.loop = true;
+            audio.onended = function() {
+                loopCount++;
+                if (loopCount >= 5) {
+                    audio.loop = false; // Detener el bucle después de 5 repeticiones
+                }
+            };
+
+            // Deshabilitar el botón después de hacer clic para evitar múltiples clics
+            var button = document.getElementById('play-button');
+            button.style.display = 'none'; // Ocultar el botón después de hacer clic
+        }
+    </script>
+        <div class="button-container">
+            <a href="marita5.html" class="button">Para regresar a la pagina anterior</a>
+            <a href="memomara.html" class="button">Dale click que todavia falta</a>
+            
+        </div>
+</body>
+</html>

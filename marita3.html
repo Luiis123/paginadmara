@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Title and Text Boxes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #cb51ef; /* Fondo púrpura */
+        }
+
+        .title-box {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #4b0082; /* Púrpura más oscuro */
+            color: white;
+            border: 2px solid #4b0082; /* Bordes púrpura más oscuro */
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-box {
+            width: 150px;
+            padding: 20px;
+            background-color: #4b0082; /* Púrpura más oscuro */
+            color: white;
+            border: 2px solid #4b0082; /* Bordes púrpura más oscuro */
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 400px;
+            border: 3px solid #4b0082; /* Bordes púrpura más oscuro */
+            border-radius: 10px;
+        }
+
+        .side-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .side-container div {
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: violet;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid purple;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: purple;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title Box -->
+    <div class="title-box">Muchas canciones me recuerdan a ti pero te quiero decir algunas aqui</div>
+
+    <div class="container">
+        <!-- Left Text Boxes -->
+        <div class="side-container">
+            <div class="text-box">Si en tu mente estuve. <br> Lit es nuestra cancion amor, no se me olvida la primera vez que salimos y te agarre la mano mientras la cantabamos q momento tan magico la nt lqs.</div>
+            <div class="text-box">Yoko. <br> No quiero que te vayas nunca y prefiero tus labios a cualquier premio lit sin mas q decir.</div>
+        </div>
+
+        <!-- Video in the center -->
+        <video controls>
+            <source src="img/videomara.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <!-- Right Text Boxes -->
+        <div class="side-container">
+            <div class="text-box">With or without you. <br>La paz y tranquilidad que me genera esa cancion neta es como si estuviera contigo en el carro solo platicando y mirandonos a los ojos, que felicidad verdad d dios.</div>
+            <div class="text-box">Nadie mas. <br>Me encanta, una de mis canciones favoritas del neskuit neta, me hace recordar todo lo bonito que vivo contigo todos los dias y lo que nos falta por vivir, te adoro mucho preciosa. </div>
+        </div>
+    </div>
+
+    <!-- Button to go back to marita3.html -->
+    <div class="button-container">
+        <a href="marita2.html" class="button">Para regresar a la pagina anterior</a>
+        <a href="marita4.html" class="button">Hay otra pagina todavia que te falta ver</a>
+    </div>
+
+</body>
+</html>

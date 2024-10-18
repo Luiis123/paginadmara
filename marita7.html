@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8A2BE2; /* Color morado */
+            background-image: url('flores-difuminadas.png'); /* Imagen difuminada de flores */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Contenedor del cuadro de texto */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Botón general */
+        .button-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo del recuadro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-box:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .button-box p {
+            margin: 0;
+            font-size: 18px;
+            color: #4B0082;
+        }
+
+        /* Flecha botón a la derecha */
+        .arrow-right {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .arrow-right:hover {
+            color: #4B0082;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 10 botones distribuidos por la página -->
+        <div class="button-box" onclick="window.location.href='marita.html'">
+            <p>Botón 1</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='marita2.html'">
+            <p>Botón 2</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='marita3.html'">
+            <p>Botón 3</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='marita4.html'">
+            <p>Botón 4</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='marita5.html'">
+            <p>Botón 5</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='marita6.html'">
+            <p>Botón 6</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='pagina7.html'">
+            <p>Botón 7</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='pagina8.html'">
+            <p>Botón 8</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='pagina9.html'">
+            <p>Botón 9</p>
+        </div>
+        <div class="button-box" onclick="window.location.href='pagina10.html'">
+            <p>Botón 10</p>
+        </div>
+    </div>
+
+    <!-- Flecha derecha que redirige a otra página -->
+    <div class="arrow-right" onclick="window.location.href='proximamente.html'">
+        ➡
+    </div>
+</body>
+</html>

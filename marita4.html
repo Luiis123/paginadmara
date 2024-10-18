@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos with Title and Text Boxes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #cb51ef; /* Fondo púrpura */
+        }
+
+        .title-box {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #4b0082; /* Púrpura más oscuro */
+            color: white;
+            border: 2px solid #4b0082; /* Bordes púrpura más oscuro */
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .image-box {
+            width: 150px;
+            padding: 10px;
+            background-color: #4b0082; /* Púrpura más oscuro */
+            border: 2px solid #4b0082; /* Bordes púrpura más oscuro */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #4b0082;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: violet;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid purple;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: purple;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title Box -->
+    <div class="title-box">Algunos mensajes que me hacen los dias bonitos cada que los veo, gracias por mostrarme ese amor tan bonito q me gusta tanto</div>
+
+    <!-- Image boxes in the center -->
+    <div class="container">
+        <div class="image-box">
+            <img src="img/fotomara1.jpeg" alt="Foto 1">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara2.jpeg" alt="Foto 2">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara3.jpeg" alt="Foto 3">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara4.jpeg" alt="Foto 4">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara5.jpeg" alt="Foto 5">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara6.jpeg" alt="Foto 6">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara7.jpeg" alt="Foto 7">
+        </div>
+        <div class="image-box">
+            <img src="img/fotomara8.jpeg" alt="Foto 8">
+        </div>
+    </div>
+
+    <!-- Button to go back to marita2.html and forward to marita4.html -->
+    <div class="button-container">
+        <a href="marita2.html" class="button">Para regresar a la página anterior</a>
+        <a href="marita5.html" class="button">Click otra vez otra vez otra vez!!</a>
+    </div>
+
+</body>
+</html>

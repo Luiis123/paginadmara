@@ -1,0 +1,37 @@
+.imagen {
+    /*El width tambien se puede poner con un numero %*/
+    width: 120px;
+    height: 150px;
+    }
+    table{
+    background-image: url("./nsqk/1.jpg");
+    display: inline-table;
+    }
+    h1{
+    display: inline;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .button {
+        background-color: violet;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 2px solid purple;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 10px;
+    }
+
+    .button:hover {
+        background-color: purple;
+        color: violet;
+    }
+    input[type=button] {
+    font-size: larger;
+    background-color: bisque;
+    }
