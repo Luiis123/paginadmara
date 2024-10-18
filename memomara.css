@@ -35,3 +35,12 @@
     font-size: larger;
     background-color: bisque;
     }
+
+    .button:hover {
+        background-color: purple;
+        color: violet;
+    }
+    input[type=button] {
+    font-size: larger;
+    background-color: bisque;
+    }
