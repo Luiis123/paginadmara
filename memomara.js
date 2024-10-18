@@ -38,8 +38,12 @@ function EliminarPar(imagen1, imagen2) {
     imagen1.removeAttribute("onclick");
     imagen2.removeAttribute("onclick");
     contador++;
+
+    var winMusic = document.getElementById("winMusic");
+
     if (contador == 8) {
         document.getElementById("contador").innerHTML = `Pares Encontrados: ${contador} ¡Ganaste!`;
+        winMusic.play();
     } else {
         document.getElementById("contador").innerHTML = `Pares Encontrados: ${contador}`;
     }
