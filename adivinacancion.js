@@ -29,8 +29,8 @@ const songs = [
         options: ["fortnite", "continental", "el tiempo que necesites", "undostres", "tarde o temprano"],
     },
     {
-        name: "cuando me vaya",
-        src: "/Cuando me Vayaa.mp3",
+        name: "mami 100pre sabe",
+        src: "juegocanciones/mami 100pre sabe.mp3",
         options: ["moldes", "sigo al pendiente", "sisifo", "sopa de letritas", "continental"],
     },
     {
