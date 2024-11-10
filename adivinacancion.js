@@ -30,7 +30,7 @@ const songs = [
     },
     {
         name: "cuando me vaya",
-        src: "juegocanciones/Cuando me Vaya.mp3",
+        src: "juegocanciones/Cuando Me Vaya.mp3",
         options: ["moldes", "sigo al pendiente", "sisifo", "sopa de letritas", "continental"],
     },
     {
