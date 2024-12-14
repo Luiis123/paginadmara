@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargar Archivos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #6A0DAD; /* Fondo morado */
+      color: white; /* Texto blanco */
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 20px 40px; /* Botones más grandes */
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #4b0082; /* Morado oscuro */
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #8a2be2; /* Morado claro cuando se pasa el mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Descarga los archivos para poder desencriptarlos</h1>
+  <button id="downloadKey">Descargar Llave</button>
+  <button id="downloadMessage">Descargar Mensaje</button>
+
+  <script>
+    // Función para descargar el archivo TXT
+    function downloadFile(content, filename) {
+      const blob = new Blob([content], { type: 'text/plain' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+    }
+
+    // Contenido de la llave y el mensaje
+    const keyContent = "1,3,4,5,5,6";
+    const messageContent = "FV VZK HVJX UX ST RXMJWU D SFJJH RFY";
+
+    // Asignar evento a los botones
+    document.getElementById('downloadKey').addEventListener('click', function() {
+      downloadFile(keyContent, 'llave.txt');
+    });
+
+    document.getElementById('downloadMessage').addEventListener('click', function() {
+      downloadFile(messageContent, 'mensaje.txt');
+    });
+  </script>
+
+</body>
+</html>
